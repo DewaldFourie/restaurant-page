@@ -2,6 +2,9 @@ import './styles.css'
 import loadHome from './home';
 import loadMenu from './menu';
 import loadContact from './contact';
+import instagramGif from './assets/instagram.gif';
+import facebookGif from './assets/facebook.gif';
+import twitterGif from './assets/twitter.gif';
 
 
 // header design function
@@ -85,6 +88,42 @@ function createMain() {
     return main;
 }
 
+// function to create sidebar
+function createSidebar(){
+    const sideDiv = document.createElement('div');
+    sideDiv.classList.add("side-div");
+
+    const instagram = new Image();
+    instagram.classList.add('side-icon')
+    instagram.src = instagramGif;
+    instagram.alt = 'instagram'
+
+    const facebook = new Image();
+    facebook.classList.add('side-icon')
+    facebook.src = facebookGif;
+    facebook.alt = 'facebook'
+
+    const twitter = new Image();
+    twitter.classList.add('side-icon')
+    twitter.src = twitterGif;
+    twitter.alt = 'twitter'
+
+    sideDiv.appendChild(instagram);
+    sideDiv.appendChild(facebook);
+    sideDiv.appendChild(twitter);
+
+    return sideDiv;
+}
+
+function createHolder() {
+    const holder = document.createElement('div');
+    holder.classList.add('holder');
+
+    holder.appendChild(createMain());
+    holder.appendChild(createSidebar());
+    return holder;
+}
+
 // Footer design Function
 function createFooter(){
     const footer = document.createElement('div');
@@ -103,11 +142,11 @@ function initializeWebsite() {
     const content = document.getElementById("content");
     
     content.appendChild(createHeader());
-    content.appendChild(createMain());
+    content.appendChild(createHolder());
     content.appendChild(createFooter());
 
     setActiveBtn(document.querySelector(".button-nav"));
-    loadMenu();
+    loadHome();
 }
 
 export default initializeWebsite;

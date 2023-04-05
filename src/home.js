@@ -1,5 +1,6 @@
 import turtle from './assets/turtle2.png'
 
+
 function createHome(){
     const home = document.createElement("div");
     home.classList.add('home');

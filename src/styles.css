@@ -28,6 +28,21 @@
     gap: 3rem;
 }
 
+.button-nav {
+    width: 120px;
+    height: 30px;
+    margin-top: 0;
+    border: none;
+    background-color: beige;
+}
+
+.active {
+    border-bottom: solid;
+    border-color: blue;
+}
+
+/* Page Load Middle */
+
 .main {
     display: flex;
     flex-direction: column;
@@ -35,6 +50,28 @@
     justify-content: center;
 }
 
+.holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.side-div {
+    position: absolute;
+    right: 20px;
+    height: 200px;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.side-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: beige;
+}
 
 /* Page Load Footer */
 .footer {
@@ -98,6 +135,12 @@
 }
 
 /* Menu Module */
+.menu {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+}
 
 .menu-item {
     display: flex;
@@ -121,10 +164,12 @@
 .food-description {
     text-align: center;
     margin-top: 0;
+    padding: 0 3px;
 }
 
 .food-image{
     height: 200px;
     width: 200px;
     border-radius: 50%;
+    margin-top: 9px;
 }
