@@ -1,3 +1,130 @@
-.image{
-    height: 400px;
+
+
+#content {
+    display: grid;
+    grid-template-rows: 2fr 10fr 0.5fr;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+/* Page Load Header */
+
+.header {
+    display: flex;
+    flex-direction: column;
+    background-color: beige;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Page Load Footer */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+}
+
+/* Home Module */
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.home-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-top-text {
+    text-align: center;
+    width: 30rem;
+}
+
+/* Contact Module */
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+
+.contact-element {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.contact-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.maps-element {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.maps-image {
+    width: 300px;
+    height: 300px;
+}
+
+/* Menu Module */
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    background-color: beige;
+}
+
+.food-element {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.food-name {
+    border-right: solid 1px;
+    padding-right: 10px;
+}
+
+.food-description {
+    text-align: center;
+    margin-top: 0;
+}
+
+.food-image{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
 }

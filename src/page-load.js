@@ -1,5 +1,7 @@
 import './styles.css'
 import loadHome from './home';
+import loadMenu from './menu';
+import loadContact from './contact';
 
 
 // header design function
@@ -43,7 +45,7 @@ function createNav() {
     menuBtn.addEventListener("click", (e) => {
         if (e.target.classList.contains('active')) return;
         setActiveBtn(menuBtn);
-        
+        loadMenu();
     })
 
     const contactBtn = document.createElement('button');
@@ -52,7 +54,7 @@ function createNav() {
     contactBtn.addEventListener("click", (e) => {
         if (e.target.classList.contains('active')) return;
         setActiveBtn(contactBtn);
-       
+        loadContact();
     })
 
     navigation.appendChild(homeBtn);
@@ -105,7 +107,7 @@ function initializeWebsite() {
     content.appendChild(createFooter());
 
     setActiveBtn(document.querySelector(".button-nav"));
-    
+    loadMenu();
 }
 
 export default initializeWebsite;
