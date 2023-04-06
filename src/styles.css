@@ -1,4 +1,8 @@
 
+body {
+    background-image: url('assets/background.jpg');
+    background-size: ;
+}
 
 #content {
     display: grid;
@@ -16,10 +20,11 @@
 .header {
     display: flex;
     flex-direction: column;
-    background-color: beige;
+    background-color: rgba(0, 0, 0, 0.6);
     width: 100vw;
     align-items: center;
     justify-content: center;
+    color: aliceblue;
 }
 
 .navigation {
@@ -33,7 +38,8 @@
     height: 30px;
     margin-top: 0;
     border: none;
-    background-color: beige;
+    background-color: transparent;
+    color: aliceblue;
 }
 
 .active {
@@ -48,6 +54,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .holder {
@@ -58,19 +65,20 @@
 
 .side-div {
     position: absolute;
-    right: 20px;
+    left: 20px;
     height: 200px;
-    background-color: beige;
+    background-color: rgba(0, 0, 0, 0.6);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    border-radius: 10px;
 }
 
 .side-icon {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: beige;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 /* Page Load Footer */
@@ -78,7 +86,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: beige;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: aliceblue;
 }
 
 /* Home Module */
@@ -89,6 +98,7 @@
     align-items: center;
     justify-content: center;
     gap: 50px;
+    color: aliceblue;
 }
 
 .home-top {
