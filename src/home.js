@@ -12,14 +12,13 @@ function createHome(){
 
         const homeTopHeading = document.createElement('h2');
         homeTopHeading.classList.add("home-top-heading");
-        homeTopHeading.textContent = "Welcome to the Restaurant";
+        homeTopHeading.textContent = "Home of the Best Ice Cream";
 
         const homeTopText = document.createElement('p');
         homeTopText.classList.add("home-top-text");
-        homeTopText.innerHTML += "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,"
-        homeTopText.innerHTML += "molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum"
-        homeTopText.innerHTML += "numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium"
-        homeTopText.innerHTML += "optio, eaque rerum! Provident similique accusantium nemo autem."
+        homeTopText.innerHTML += "Welcome to Heavenly Scoops, where every scoop is a heavenly delight! Our artisanal "
+        homeTopText.innerHTML += "ice cream is made with the freshest ingredients, carefully crafted to create the perfect "
+        homeTopText.innerHTML += "balance of flavors and textures."
 
         homeTop.appendChild(homeTopHeading);
         homeTop.appendChild(homeTopText);

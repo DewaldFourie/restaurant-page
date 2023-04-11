@@ -93,10 +93,18 @@ function createSidebar(){
     const sideDiv = document.createElement('div');
     sideDiv.classList.add("side-div");
 
+    const instagramLink = document.createElement('a');
+    instagramLink.href = 'https://www.instagram.com/explore/tags/icecream/';
+    const facebookLink = document.createElement('a');
+    facebookLink.href = 'https://www.facebook.com/groups/534529324504780';
+    const twitterLink = document.createElement('a');
+    twitterLink.href = 'https://twitter.com/IceCream';
+
     const instagram = new Image();
     instagram.classList.add('side-icon')
     instagram.src = instagramGif;
     instagram.alt = 'instagram'
+    
 
     const facebook = new Image();
     facebook.classList.add('side-icon')
@@ -108,9 +116,12 @@ function createSidebar(){
     twitter.src = twitterGif;
     twitter.alt = 'twitter'
 
-    sideDiv.appendChild(instagram);
-    sideDiv.appendChild(facebook);
-    sideDiv.appendChild(twitter);
+    instagramLink.appendChild(instagram);
+    facebookLink.appendChild(facebook);
+    twitterLink.appendChild(twitter)
+    sideDiv.appendChild(instagramLink);
+    sideDiv.appendChild(facebookLink);
+    sideDiv.appendChild(twitterLink);
 
     return sideDiv;
 }
@@ -131,7 +142,7 @@ function createFooter(){
 
     const footerText = document.createElement('span')
     footerText.classList.add('footer-text')
-    footerText.textContent = "Copyright © Dewald Fourie 2023"
+    footerText.textContent = "Built by ©Dewald Fourie 2023"
 
     footer.appendChild(footerText);
 

@@ -1,6 +1,7 @@
 import telephone from './assets/telephone.png';
 import location from './assets/location.png';
 import maps from './assets/orlando.JPG';
+import hours from './assets/hours.png';
 
 function createContact(){
     const contact = document.createElement("div");
@@ -16,6 +17,21 @@ function createContact(){
     function createContactMiddle(){
         const contactMiddle = document.createElement('div');
         contactMiddle.classList.add('contact-middle');
+
+        function createHours(){
+            const hoursDiv = document.createElement('div');
+            hoursDiv.classList.add('contact-element');
+            const hoursIcon = new Image();
+            hoursIcon.classList.add('contact-icon');
+            hoursIcon.src = hours
+            const hoursText = document.createElement('div');
+            hoursText.classList.add('hours-text');
+            hoursText.textContent = "Mon-Fri | 08:00 - 17:00";
+
+            hoursDiv.appendChild(hoursIcon);
+            hoursDiv.appendChild(hoursText);
+            return hoursDiv;
+        }
 
         function createPhone(){
             const phoneDiv = document.createElement('div');
@@ -58,7 +74,7 @@ function createContact(){
             return mapsDiv;
         }
         
-
+        contactMiddle.appendChild(createHours())
         contactMiddle.appendChild(createPhone())
         contactMiddle.appendChild(createLocation())
         contactMiddle.appendChild(createMap());
