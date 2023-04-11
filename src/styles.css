@@ -1,7 +1,17 @@
 
+@font-face {
+    font-family: 'myFont';
+    src: url('./assets/myfont.ttf') format('woff');
+    font-style: normal;
+    font-weight: bold;
+}
+
 body {
     background-image: url('assets/background.jpg');
-    background-size: ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
 }
 
 #content {
@@ -20,11 +30,13 @@ body {
 .header {
     display: flex;
     flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.7);
     width: 100vw;
     align-items: center;
     justify-content: center;
     color: aliceblue;
+    font-family: 'myFont';
+    font-size: larger;
 }
 
 .navigation {
@@ -42,9 +54,13 @@ body {
     color: aliceblue;
 }
 
+.button-nav:hover {
+    cursor: grab;
+}
+
 .active {
     border-bottom: solid;
-    border-color: blue;
+    border-color: aliceblue;
 }
 
 /* Page Load Middle */
@@ -54,7 +70,9 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: 10px;
+    border-radius: 5px;
 }
 
 .holder {
@@ -65,20 +83,25 @@ body {
 
 .side-div {
     position: absolute;
-    left: 20px;
+    right: 20px;
     height: 200px;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.7);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     border-radius: 10px;
+    padding: 5px;
 }
 
 .side-icon {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.side-icon:hover {
+    cursor: grab;
 }
 
 /* Page Load Footer */
@@ -86,8 +109,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.7);
     color: aliceblue;
+    bottom: 0;
 }
 
 /* Home Module */
@@ -97,8 +121,11 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 50px;
+    gap:30px;
     color: aliceblue;
+    padding: 20px 80px;
+    width: 600px;
+    font-family: 'myFont';
 }
 
 .home-top {
@@ -112,19 +139,33 @@ body {
     width: 30rem;
 }
 
+.home-image {
+ border-radius: 5%;
+}
+
+.home-middle-text {
+    text-align: center;
+}
+
 /* Contact Module */
 .contact {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
+    padding: 40px;
+    font-family: 'myFont';
 }
 
+.contact-header {
+    color: aliceblue;
+}
 
 .contact-element {
     display: flex;
     gap: 20px;
     align-items: center;
+    color: aliceblue;
 }
 
 .contact-icon {
@@ -142,11 +183,12 @@ body {
 .maps-image {
     width: 300px;
     height: 300px;
+    border-radius: 5px;
 }
 
 /* Menu Module */
 .menu {
-    padding: 20px;
+    padding: 15px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 15px;
@@ -157,13 +199,15 @@ body {
     flex-direction: column;
     align-items: center;
     max-width: 300px;
-    background-color: beige;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
 }
 
 .food-element {
     display: flex;
     align-items: center;
     gap: 10px;
+    color: aliceblue;
 }
 
 .food-name {
@@ -175,6 +219,7 @@ body {
     text-align: center;
     margin-top: 0;
     padding: 0 3px;
+    color: aliceblue;
 }
 
 .food-image{

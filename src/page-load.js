@@ -19,7 +19,7 @@ function createHeader() {
 
     const title = document.createElement('h1');
     title.classList.add('title');
-    title.textContent = 'RESTAURANT';
+    title.textContent = 'HEAVENLY SCOOPS';
 
     header.appendChild(heading);
     heading.appendChild(title);

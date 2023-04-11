@@ -1,5 +1,5 @@
-import turtle from './assets/turtle2.png'
 
+import chef from './assets/chef.jpeg'
 
 function createHome(){
     const home = document.createElement("div");
@@ -34,7 +34,7 @@ function createHome(){
 
         const homeImage = new Image();
         homeImage.classList.add('home-image');
-        homeImage.src = turtle;
+        homeImage.src = chef;
 
         const homeMiddleText = document.createElement('h3');
         homeMiddleText.classList.add('home-middle-text');
